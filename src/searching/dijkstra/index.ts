@@ -1,1 +1,1 @@
-export * from "./dijkstra";
+export { dijkstra } from "./dijkstra";

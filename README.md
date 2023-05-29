@@ -14,8 +14,8 @@ Inspired by [JavaScript Algorithms and Data Structures](https://github.com/trekh
   - [ ] Merge Sort
   - [ ] Quicksort
   - [ ] Bucket Sort
-- [ ] Searching
-  - [ ] Binary Search
+- [x] Searching
+  - [x] Binary Search
   - [x] Breadth-first Search
   - [x] Depth-first Search
   - [x] Dijkstra

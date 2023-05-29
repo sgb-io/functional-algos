@@ -1,1 +1,1 @@
-export * from "./bfs";
+export { breadthFirstSearch } from "./bfs";
