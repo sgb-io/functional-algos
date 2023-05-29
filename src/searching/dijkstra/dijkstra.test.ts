@@ -1,7 +1,7 @@
 import { dijkstra } from "./dijkstra";
 
 describe("dijkstra", () => {
-  it("should return shortest paths from start node to all other nodes", () => {
+  test("should return shortest paths from start node to all other nodes", () => {
     const graph = new Map<string, Map<string, number>>([
       [
         "A",

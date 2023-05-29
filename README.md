@@ -21,8 +21,8 @@ npm install functional-algos
 - [ ] Sorting
   - [ ] Selection Sort
   - [ ] Insertion Sort
-  - [ ] Heap Sort
-  - [ ] Merge Sort
+  - [x] Heap Sort
+  - [x] Merge Sort
   - [x] Quicksort
   - [ ] Bucket Sort
 - Searching

@@ -1,7 +1,7 @@
 import { breadthFirstSearch } from "./bfs";
 
 describe("breadthFirstSearch", () => {
-  it("should return nodes in breadth-first order for a graph with number nodes", () => {
+  test("should return nodes in breadth-first order for a graph with number nodes", () => {
     const graph = new Map<number, number[]>([
       [1, [2, 4]],
       [2, [1, 3]],
@@ -14,7 +14,7 @@ describe("breadthFirstSearch", () => {
     expect(result).toEqual([1, 2, 4, 3, 5]);
   });
 
-  it("should return nodes in breadth-first order for a graph with string nodes", () => {
+  test("should return nodes in breadth-first order for a graph with string nodes", () => {
     const graph = new Map<string, string[]>([
       ["A", ["B", "D"]],
       ["B", ["A", "C"]],
