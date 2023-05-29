@@ -4,6 +4,22 @@ Depth-First Search (DFS) is a strategy for searching in a graph that priotitizes
 
 The algorithm starts at the root node and explores as far as possible along each branch before backtracking. This means it goes deep into a branch and then backtracks when it can go no further. This function returns the nodes in the order they were visited as an array.
 
+## Usage
+
+```typescript
+import { depthFirstSearch } from "functional-algos";
+
+const graph = new Map<string, string[]>([
+  ["A", ["B", "E"]],
+  ["B", ["A", "C"]],
+  ["C", ["B", "D"]],
+  ["D", ["C"]],
+  ["E", ["A"]],
+]);
+
+const result = depthFirstSearch(graph, "A");
+```
+
 ## Examples
 
 _Also used in the tests_

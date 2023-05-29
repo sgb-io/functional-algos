@@ -4,6 +4,15 @@ Binary Search is an efficient algorithm for finding an item in a sorted array. I
 
 This functions returns the index of the item, or `-1` if it was not found.
 
+## Usage
+
+```typescript
+import { binarySearch } from "functional-algos";
+
+const arr = ["apple", "banana", "cherry", "date", "elderberry"];
+binarySearch(arr, "cherry"); // 2
+```
+
 ## Example
 
 Consider a sorted array of strings: `["apple", "banana", "cherry", "date", "elderberry"]`.

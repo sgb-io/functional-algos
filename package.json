@@ -1,5 +1,5 @@
 {
-  "name": "algo-implementations",
+  "name": "functional-algos",
   "version": "0.1.0",
   "main": "dist/index.js",
   "repository": "https://github.com/sgb-io/algo-implementations.git",

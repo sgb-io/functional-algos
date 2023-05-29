@@ -4,6 +4,33 @@ Dijkstra's algorithm is an algorithm for finding the shortest paths between node
 
 This function accecepts a graph with starting node and returns a `Map` containing shortest paths from the starting node to all other nodes.
 
+## Usage
+
+```typescript
+import { dijkstra } from "functional-algos";
+
+const graph = new Map<string, Map<string, number>>([
+  [
+    "A",
+    new Map([
+      ["B", 6],
+      ["D", 1],
+    ]),
+  ],
+  [
+    "B",
+    new Map([
+      ["C", 5],
+      ["D", 2],
+      ["E", 2],
+    ]),
+  ],
+  // etc
+]);
+
+const result = dijkstra(graph, "A");
+```
+
 ## Example
 
 Sample weighted graph:
