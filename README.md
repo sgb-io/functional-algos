@@ -17,8 +17,8 @@ Inspired by [JavaScript Algorithms and Data Structures](https://github.com/trekh
 - [ ] Searching
   - [ ] Binary Search
   - [x] Breadth-first Search
-  - [ ] Depth-first Search
-  - [ ] Djikstra
+  - [x] Depth-first Search
+  - [x] Dijkstra
 - [ ] Fibonacci Sequence
 
 ## Data Structures
