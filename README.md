@@ -1,19 +1,13 @@
 # Functional Algos
 
-A utility library containing algorithm implementations, using functional TypeScript.
-
-Inspired by [JavaScript Algorithms and Data Structures](https://github.com/trekhleb/javascript-algorithms), but with a smaller scope and focus on functional implementations.
+`functional-algos` is a TypeScript library containing popular algorithm implementations.
 
 ## Installation
 
 Install `functional-algos`:
 
-```
-yarn add functional-algos
-```
-
-```
-npm install functional-algos
+```bash
+yarn add functional-algos # or whatever package manager you use
 ```
 
 ## Algorithms
@@ -30,17 +24,9 @@ npm install functional-algos
   - [Breadth-first Search](src/searching/bfs)
   - [Depth-first Search](src/searching/dfs)
   - [Dijkstra](src/searching/dijkstra)
-- [ ] Fibonacci Sequence
+- Dynamic Programming
+  - [Fibonacci](src/dynamic/fib)
 
-## Data Structures
+## Contributing
 
-- [ ] Linked List
-- [ ] Doubly Linked List
-- [ ] Queue
-- [ ] Stack
-- [ ] Hash Table
-- [ ] Heap
-- [ ] Priority Queue
-- [ ] Tree
-  - [ ] Binary Search Tree
-- [x] Graph
+Contributions are welcomed! Please note the goal of the library is to expose working, complete, re-usable implementations. For example,
