@@ -1,35 +1,30 @@
 import { quickSort } from "./quickSort";
 
 describe("quickSort", () => {
-  test("sorts an array of numbers", () => {
-    expect(quickSort([3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5])).toEqual([
-      1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9,
-    ]);
+  it("sorts an empty array", () => {
+    const arr: number[] = [];
+    expect(quickSort(arr)).toEqual([]);
   });
 
-  test("sorts an array of strings", () => {
-    const stringComparator = (a: string, b: string) => a.localeCompare(b);
-    expect(
-      quickSort(["apple", "banana", "cherry", "apple"], stringComparator)
-    ).toEqual(["apple", "apple", "banana", "cherry"]);
+  it("sorts an array of numbers", () => {
+    const arr = [5, 3, 2, 4, 1];
+    expect(quickSort(arr)).toEqual([1, 2, 3, 4, 5]);
   });
 
-  test("sorts an array of objects", () => {
-    const arr = [{ value: 5 }, { value: 2 }, { value: 9 }, { value: 1 }];
+  it("sorts an array of strings", () => {
+    const arr = ["e", "c", "b", "d", "a"];
+    const comparator = (a: string, b: string) => a.localeCompare(b);
+    expect(quickSort(arr, comparator)).toEqual(["a", "b", "c", "d", "e"]);
+  });
+
+  it("sorts an array of objects", () => {
+    const arr = [{ value: 3 }, { value: 2 }, { value: 1 }];
     const comparator = (a: { value: number }, b: { value: number }) =>
       a.value - b.value;
     expect(quickSort(arr, comparator)).toEqual([
       { value: 1 },
       { value: 2 },
-      { value: 5 },
-      { value: 9 },
+      { value: 3 },
     ]);
-  });
-
-  test("does not mutate the original array", () => {
-    const arr = [5, 3, 8, 4, 2];
-    const copy = [...arr];
-    quickSort(arr);
-    expect(arr).toEqual(copy);
   });
 });

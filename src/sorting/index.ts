@@ -1,3 +1,4 @@
+export * from "./quicksort-recursive";
 export * from "./quicksort";
 export * from "./merge-sort";
 export * from "./heap-sort";

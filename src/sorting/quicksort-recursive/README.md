@@ -1,12 +1,12 @@
-# Quicksort
+# Quicksort (Recursive)
 
-**This is the iterative (default) version of quicksort**. The implementation is more complex than the recursive version, but does not use recursion and therefore does not run into the same stack depth limitations.
+**This is the recursive version of quicksort**. The implementation is simpler than the iterative (default) version, but it can potentially run into stack depth limitations when working with large data.
 
-Quicksort is a widely used sorting algorithm that operates on the principle of divide-and-conquer. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. Traditionally, the sub-arrays are recursively sorted, but in this implementation, we use an iterative approach with an explicit stack to avoid potential issues with recursion depth.
+Quicksort is a widely used sorting algorithm that is based on the divide-and-conquer principle. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. The sub-arrays are then recursively sorted.
 
-This function sorts the array in place and returns the sorted array.
+This function returns the sorted array.
 
-By default, values are compared as if they were numbers, but you can provide an optional `comparator` function for custom comparison logic when working with an array of different types or structures.
+By default, values are compared like numbers, but you can provide an optional `comparator` when working with an array of different types.
 
 ## Usage
 

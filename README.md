@@ -17,6 +17,7 @@ yarn add functional-algos # or whatever package manager you use
   - [Heap Sort](src/sorting/heap-sort)
   - [Merge Sort](src/sorting/merge-sort)
   - [Quicksort](src/sorting/quicksort)
+  - [Quicksort (Recursive)](src/sorting/quicksort-recursive)
   - [Insertion Sort](src/sorting/insertion-sort)
   - [Bucket Sort](src/sorting/bucket-sort)
 - Searching
@@ -29,4 +30,8 @@ yarn add functional-algos # or whatever package manager you use
 
 ## Contributing
 
-Contributions are welcomed! Please note the goal of the library is to expose working, complete, re-usable implementations. For example,
+Contributions are welcomed! Please note the goal of the library is to expose working, complete, re-usable implementations.
+
+## License
+
+MIT
