@@ -2,7 +2,7 @@
 
 Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a weighted graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.
 
-This function returns the nodes in the order they were visited as an array.
+This function accecepts a graph with starting node and returns a `Map` containing shortest paths from the starting node to all other nodes.
 
 ## Example
 
@@ -22,4 +22,10 @@ graph LR
   E -->|5| C
 ```
 
-The shortest path to `E` is: `["A", "D", "E"]`
+The shortest paths from `A` to the other nodes are:
+
+- `A` (itself): `["A"]`
+- `B`: `["A", "D", "B"]`
+- `C`: `["A", "D", "E", "C"]`
+- `D`: `["A", "D"]`
+- `E`: `["A", "D", "E"]`
