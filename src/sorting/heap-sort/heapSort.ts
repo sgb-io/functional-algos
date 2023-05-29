@@ -1,10 +1,10 @@
-type Comparator<T> = (a: T, b: T) => number;
+import type { SortComparator } from "../../data-structures/graph";
 
 function heapify<T>(
   arr: T[],
   n: number,
   i: number,
-  comparator: Comparator<T>
+  comparator: SortComparator<T>
 ): T[] {
   let largest = i;
   let left = 2 * i + 1;
@@ -30,7 +30,7 @@ function heapify<T>(
 
 export function heapSort<T>(
   arr: T[],
-  comparator: Comparator<T> = (a, b) => <any>a - <any>b
+  comparator: SortComparator<T> = (a, b) => <any>a - <any>b
 ): T[] {
   let n = arr.length;
   let tempArr = [...arr];

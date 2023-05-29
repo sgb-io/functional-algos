@@ -1,6 +1,8 @@
+import type { SortComparator } from "../../data-structures/graph";
+
 export function mergeSort<T>(
   arr: T[],
-  comparator: (a: T, b: T) => number = (a, b) => <any>a - <any>b
+  comparator: SortComparator<T> = (a, b) => <any>a - <any>b
 ): T[] {
   if (arr.length <= 1) {
     return arr;

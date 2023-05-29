@@ -18,13 +18,13 @@ npm install functional-algos
 
 ## Algorithms
 
-- [ ] Sorting
-  - [ ] Selection Sort
-  - [ ] Insertion Sort
-  - [x] Heap Sort
-  - [x] Merge Sort
-  - [x] Quicksort
-  - [ ] Bucket Sort
+- Sorting
+  - [Selection Sort](src/sorting/selection-sort)
+  - [Heap Sort](src/sorting/heap-sort)
+  - [Merge Sort](src/sorting/merge-sort)
+  - [Quicksort](src/sorting/quicksort)
+  - [Insertion Sort](src/sorting/insertion-sort)
+  - [Bucket Sort](src/sorting/bucket-sort)
 - Searching
   - [Binary Search](src/searching/binary-search)
   - [Breadth-first Search](src/searching/bfs)

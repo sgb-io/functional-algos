@@ -8,8 +8,6 @@ By default, values are compared like numbers, but you can provide an optional `c
 
 ## Usage
 
-Here's a basic usage example in TypeScript:
-
 ```typescript
 import { mergeSort } from "functional-algos";
 
