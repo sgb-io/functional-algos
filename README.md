@@ -14,11 +14,11 @@ Inspired by [JavaScript Algorithms and Data Structures](https://github.com/trekh
   - [ ] Merge Sort
   - [ ] Quicksort
   - [ ] Bucket Sort
-- [x] Searching
-  - [x] Binary Search
-  - [x] Breadth-first Search
-  - [x] Depth-first Search
-  - [x] Dijkstra
+- Searching
+  - [Binary Search](src/searching/binary-search)
+  - [Breadth-first Search](src/searching/bfs)
+  - [Depth-first Search](src/searching/dfs)
+  - [Dijkstra](src/searching/dijkstra)
 - [ ] Fibonacci Sequence
 
 ## Data Structures
