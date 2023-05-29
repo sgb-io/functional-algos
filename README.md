@@ -1,7 +1,35 @@
 # Algo Implementations
 
-The idea of this is to learn more about data structures and algorithms by implementing them.
+A collection of algorithm and data structure implementations, using functional TypeScript.
 
-1. Create a blank template of all data structures and algorithms in https://github.com/trekhleb/javascript-algorithms/tree/master/src. It seems pretty comprehensive.
-2. Write your own functional + TypeScript implementations of all of them (you can use tests from that library to validate them)
-3. When you're happy with how it all went, make it an actual library and open source it
+Inspired by [JavaScript Algorithms and Data Structures](https://github.com/trekhleb/javascript-algorithms), but with a smaller scope and focus on functional implementations.
+
+## Algorithms
+
+- [ ] Sorting
+  - [ ] Bubble Sort
+  - [ ] Selection Sort
+  - [ ] Insertion Sort
+  - [ ] Heap Sort
+  - [ ] Merge Sort
+  - [ ] Quicksort
+  - [ ] Bucket Sort
+- [ ] Searching
+  - [ ] Binary Search
+  - [x] Breadth-first Search
+  - [ ] Depth-first Search
+  - [ ] Djikstra
+- [ ] Fibonacci Sequence
+
+## Data Structures
+
+- [ ] Linked List
+- [ ] Doubly Linked List
+- [ ] Queue
+- [ ] Stack
+- [ ] Hash Table
+- [ ] Heap
+- [ ] Priority Queue
+- [ ] Tree
+  - [ ] Binary Search Tree
+- [x] Graph
