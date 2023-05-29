@@ -1,4 +1,4 @@
-import type { SimpleGraph } from "../data-structures/graph";
+import type { SimpleGraph } from "../../data-structures/graph";
 
 export const breadthFirstSearch = <T>(graph: SimpleGraph<T>, start: T): T[] => {
   let bfsOrder: T[] = [];

@@ -1,4 +1,4 @@
-import type { SimpleGraph } from "../data-structures/graph";
+import type { SimpleGraph } from "../../data-structures/graph";
 
 export const depthFirstSearch = <T>(graph: SimpleGraph<T>, start: T): T[] => {
   let dfsOrder: T[] = [];

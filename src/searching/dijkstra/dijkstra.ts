@@ -1,4 +1,4 @@
-import type { WeightedGraph } from "../data-structures/graph";
+import type { WeightedGraph } from "../../data-structures/graph";
 
 const createPath = <T>(
   previousNodes: Map<T, T | null>,
