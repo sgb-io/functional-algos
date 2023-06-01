@@ -27,6 +27,8 @@ yarn add functional-algos # or whatever package manager you use
   - [Dijkstra](src/searching/dijkstra)
 - Dynamic Programming
   - [Fibonacci](src/dynamic/fib)
+- Traversal
+  - [Linked Lists](src/traversal/linked-list/)
 
 ## Contributing
 
