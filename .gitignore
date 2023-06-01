@@ -1,3 +1,5 @@
 node_modules
 dist
 coverage
+local-verify.ts
+local-verify.js

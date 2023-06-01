@@ -6,6 +6,7 @@
     "esModuleInterop": true,
     "target": "ES2015",
     "moduleResolution": "node",
+    "module": "commonjs",
     "outDir": "dist",
     "declaration": true,
     "declarationDir": "dist/types"
