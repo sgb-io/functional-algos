@@ -29,6 +29,8 @@ yarn add functional-algos # or whatever package manager you use
   - [Fibonacci](src/dynamic/fib)
 - Traversal
   - [Linked Lists](src/traversal/linked-list/)
+- Optimization
+  - [Memoize](src/optimization/memoize/)
 
 ## Contributing
 
