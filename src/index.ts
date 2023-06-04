@@ -3,3 +3,4 @@ export * from "./sorting";
 export * from "./dynamic";
 export * from "./data-structures";
 export * from "./traversal";
+export * from "./optimization";
