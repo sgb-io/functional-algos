@@ -65,8 +65,6 @@ const memoizedAdd = memoizeOne(add);
 memoizedAdd(1, 2, doThing);
 memoizedAdd(1, 2, doThing);
 // numAddCalls = 1, numThingCalls = 1
-expect(numAddCalls).toBe(1);
-expect(numThingCalls).toBe(1);
 
 // New functions used in args - memoization won't happen
 memoizedAdd(1, 2, () => {});
