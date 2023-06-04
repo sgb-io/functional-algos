@@ -30,43 +30,30 @@ describe("memoize", () => {
     memoizedDoThing();
     expect(numCalls).toBe(1);
   });
+
+  test("memoizes a function that accepts mixed arguments including a function", () => {
+    let numAddCalls = 0;
+    let numThingCalls = 0;
+
+    const doThing = () => {
+      numThingCalls += 1;
+    };
+    const add = (a: number, b: number, c: () => void) => {
+      numAddCalls += 1;
+      c();
+      return a + b;
+    };
+    const memoizedAdd = memoizeOne(add);
+
+    // Same function re-used in args
+    memoizedAdd(1, 2, doThing);
+    memoizedAdd(1, 2, doThing);
+    expect(numAddCalls).toBe(1);
+    expect(numThingCalls).toBe(1);
+
+    // New functions used in args - memoization won't happen
+    memoizedAdd(1, 2, () => {});
+    memoizedAdd(1, 2, () => {});
+    expect(numAddCalls).toBe(3);
+  });
 });
-
-// function doFancyThing(a: number, b: () => void) {
-//   const result = b();
-//   console.log('doFancyThing!', a, result);
-// }
-
-// function doNothing(foo?: number) {
-//   if (foo) {
-//     console.log('You provided an arg!');
-//   } else {
-//     console.log('Nothing happened');
-//   }
-// }
-
-// const memoizedAdd = memoize(add);
-// const memoizedFancyThing = memoize(doFancyThing);
-// const memoizedDoNothing = memoize(doNothing);
-
-// // console.log(memoizedAdd(1, 2));
-// // console.log(memoizedAdd(1, 2));
-
-// // console.log(memoizedAdd(2, 3)); // result: 5 - [add function: is called]
-// // console.log(memoizedAdd(2, 3)); // result: 5 - [add function: is not called]
-
-// // console.log(memoizedAdd(1, 2)); // result: 3 - [add function: is called]
-
-// function doFoo() {
-//   return 'foo';
-// }
-
-// console.log(memoizedFancyThing(5, doFoo));
-// console.log(memoizedFancyThing(5, doFoo));
-// console.log(memoizedFancyThing(5, doFoo));
-// console.log(memoizedFancyThing(5, doFoo));
-// console.log(memoizedFancyThing(5, doFoo)); // should not log out
-
-// // console.log(JSON.stringify([memoizedAdd]));
-// console.log(memoizedDoNothing());
-// console.log(memoizedDoNothing());
