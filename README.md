@@ -12,6 +12,8 @@ yarn add functional-algos # or whatever package manager you use
 
 ## Algorithms
 
+Library functions exposed by `functional-algos`
+
 - Sorting
   - [Selection Sort](src/sorting/selection-sort)
   - [Heap Sort](src/sorting/heap-sort)
@@ -31,6 +33,12 @@ yarn add functional-algos # or whatever package manager you use
   - [Linked Lists](src/traversal/linked-list/)
 - Optimization
   - [Memoize](src/optimization/memoize/)
+
+## Problems
+
+Examples of specific problems solved using `functional-algos`, but not exposed by the library
+
+- [Staircase Problem](src/problems/staircase/)
 
 ## Contributing
 
