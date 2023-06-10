@@ -29,6 +29,7 @@ Library functions exposed by `functional-algos`
   - [Dijkstra](src/searching/dijkstra)
 - Dynamic Programming
   - [Fibonacci](src/dynamic/fib)
+  - [Trapping Water](src/dynamic/trapping-water/)
 - Traversal
   - [Linked Lists](src/traversal/linked-list/)
 - Optimization
